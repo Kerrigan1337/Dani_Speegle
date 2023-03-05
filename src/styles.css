@@ -49,6 +49,35 @@ header a {
   margin-top: 32px;
   gap: 10px;
 }
+main {
+  background-color: #272044;
+}
+main h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #5bd5e3;
+  margin: 0;
+}
+main h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  margin: 0;
+}
+main p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f9f4ff;
+}
 
 .container {
   max-width: 1400px;
@@ -61,7 +90,6 @@ footer {
     url("../images/Dani-Speegle.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 footer h3 {
   font-style: normal;
@@ -93,11 +121,20 @@ footer a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-col-3 {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive {
+  max-width: 100%;
 }
 @media (max-width: 960px) {
   header {
@@ -111,5 +148,12 @@ section {
   }
   header h1 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  sections {
+    padding: 30px;
   }
 }
