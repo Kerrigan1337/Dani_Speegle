@@ -125,6 +125,10 @@ section {
 section.secondary {
   background: linear-gradient(#030504, #020403, #0b0620);
 }
+blockquote {
+  margin: 0 auto;
+  display: block;
+}
 .secondary h3 {
   color: white;
 }
